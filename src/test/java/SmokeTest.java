@@ -1,7 +1,5 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -39,18 +37,6 @@ public class SmokeTest {
 	public void beforeEach() {
 		setUpDriver(driver,20);
 		goToUrl(driver, "http://www.adriatic.hr/");
-	}
-
-	@Features("serverError")
-	@Test
-	public void serverError(){
-		goToUrl(driver, "https://www.ukr.net/");
-		driver.findElement(By.name("Login")).sendKeys("seleniumtestnew@ukr.net");
-		driver.findElement(By.name("Password")).sendKeys("seleniumtest");
-		driver.findElement(By.xpath("//div[@class = \"login-block__submit-but\"]")).click();
-		driver.findElement(By.cssSelector("[href=\"https://mail.ukr.net/q/start#msglist\"]")).click();
-
-		Assert.assertTrue("failed assert", false);
 	}
 
 	@Title("Sign In")
@@ -203,7 +189,6 @@ public class SmokeTest {
 		int windowsQuantity = AllWindowHandles.toArray().length;
 		log.info("windows:" + windowsQuantity);
 		
-		String parentWindow = (String) AllWindowHandles.toArray()[0];
 		String LiveChatOnlineWindow = (String) AllWindowHandles.toArray()[1];
 		log.info("Switching from parent window to LiveChatOnlineWindow");
 		driver.switchTo().window(LiveChatOnlineWindow);

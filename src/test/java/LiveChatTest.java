@@ -1,7 +1,5 @@
-import config.*;
 import org.apache.log4j.Logger;
 import org.junit.*;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.Homepage;
@@ -43,8 +41,8 @@ public class LiveChatTest {
     @Severity(SeverityLevel.BLOCKER)
     @Test
     public void OpenLiveChat() {
-        log.info("Open Baseurl: " + Config.baseUrl);
-        driver.get(Config.baseUrl);
+        log.info("Open Baseurl: " + "www.adriatic.hr");
+        goToUrl(driver, "http://www.adriatic.hr/");
 
         String mainWindow = driver.getWindowHandle();
 

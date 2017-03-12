@@ -83,8 +83,8 @@ public class LoginTest {
 		 Assert.assertEquals("Username or E-Mail - The combination of the entered e-mail address and password is invalid", errorMessage );
 	}
 
-	@Title("Login with invalid email")
-	@Description("Should not login with invalid email")
+	@Title("Login with invalid Password")
+	@Description("Should not login with invalid Password")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test
 	public void loginInvalidPassword() {
@@ -174,12 +174,12 @@ public class LoginTest {
 		Assert.assertEquals("User with this e-mail address does not exist.", message);
 	}
 
-	@Title("Login Invalid Password")
-	@Description("Should not login with invalid password")
+	@Title("Login cancel")
+	@Description("Should cancel login")
 	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void loginCancel(){
-		 log.info("Running test - LoginInvalidPassword");
+		 log.info("Running test - loginCancel");
 		 log.info("Click SignInButton");
 		 clickButton(basePage.SignInButton);
 		

@@ -1,7 +1,6 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.BasePage;
 import pageObjects.LiveChatPopup;
@@ -11,8 +10,6 @@ import helpers.Rules;
 import java.util.Set;
 import org.junit.runners.MethodSorters;
 import ru.yandex.qatools.allure.model.SeverityLevel;
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
-
 
 @Title("suite:Live Chat Online Test")
 @Description("Live Chat Online Test:")
