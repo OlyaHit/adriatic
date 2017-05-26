@@ -194,7 +194,7 @@ public class LoginTest {
 		 log.info("Move to HomeTab");
 		 moveMouse(actions, driver, basePage.HomeTab);
 		 log.info("Move to CancelLoginButton and click");
-		 moveAndClickMouse(actions,driver, basePage.CancelLoginButton);
+		 moveAndClickMouse (driver, basePage.CancelLoginButton);
 		 
 		 String currentPageUrl = driver.getCurrentUrl();
 		 log.info("Get url:-"+ currentPageUrl);

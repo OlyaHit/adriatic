@@ -20,7 +20,7 @@ public class Homepage extends BasePage {
     public WebElement HomepageSearchForm;
 
     private void waitForVisibility(WebDriver driver, WebElement element) throws Error{
-        new WebDriverWait(driver, 60)
+        new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.visibilityOf(element));
     }
 

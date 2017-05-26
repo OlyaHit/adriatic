@@ -5,6 +5,11 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ LiveChatTest.class })
+@SuiteClasses({ LiveChatOnlineTest.class, 
+	LiveChatTest.class,
+	LoginTest.class, 
+	LookingHolidaySearchTest.class,
+	ReservationTest.class,
+	SmokeTest.class })
 public class AllTests {
 }
