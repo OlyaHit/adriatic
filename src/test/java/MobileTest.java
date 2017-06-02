@@ -1,5 +1,3 @@
-import static helpers.WebLibrary.goToUrl;
-import static helpers.WebLibrary.setUpDriver;
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +9,7 @@ import pageObjectGuru.MobilePage;
 public class MobileTest {
 	
 	private static final Logger log = Logger.getLogger(LiveChatOnlineTest.class);
-	public WebDriver driver = new FirefoxDriver();
+	public static WebDriver driver = new FirefoxDriver();
 	public BasePageG basePage = new BasePageG(driver);
 	public MobilePage mobilePage = new MobilePage(driver);
 	
@@ -22,16 +20,20 @@ public class MobileTest {
 	@Before
 	public void beforeEach() {
 		setUpDriver(driver,15);
-		goToUrl(driver, "/http://live.guru99.com/index.php");
+		goToUrl(driver, "http://live.guru99.com/index.php");
 	}
-	
+	@AfterClass
+	public static void shutDown (){
+		driver.quit();
+	}
+	@Test
 	public void verifyMobileSortedByName (){
 		log.info("click link mobileMenu" );
 		clickLink(basePage.mobileMenu);
 		log.info("sortBy Name in DropDownForMobile" );
 		selectDropDownByIndex(driver, mobilePage.sortByDropDownForMobile, 1);
 		
-		String expectedResult = "IPhone";
+		String expectedResult = "IPHONE";
 		String actualResult = mobilePage.mobileProductNames.get(0).getText();
 		log.info("get actual result" + actualResult);
 		
@@ -39,4 +41,5 @@ public class MobileTest {
 		
 		
 	}
+	
 }
