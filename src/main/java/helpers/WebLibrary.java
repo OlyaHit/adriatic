@@ -74,8 +74,9 @@ public class WebLibrary {
 	}
 	
 	@Step("Wait Element for \"{1}\" seconds")
-	public  static void newWait (WebDriver driver, long seconds, ExpectedCondition <Boolean>condition,WebElement element ){
-		(new WebDriverWait(driver, seconds)).until(condition);
+	public  static void waitElementToBeClickable (WebDriver driver, long seconds, WebElement element ){
+		WebDriverWait wait = new WebDriverWait(driver, seconds);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	//-----------------actions-------------

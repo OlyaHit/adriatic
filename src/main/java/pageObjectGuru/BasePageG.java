@@ -17,4 +17,10 @@ public class BasePageG {
 	@FindBy(xpath="//a[text()='TV']")
 	public WebElement tVMenu;
 	
+	@FindBy(xpath="//span[text()='Account']")
+	public WebElement accountLink;
+	
+	@FindBy(xpath="//div[@id='header-account']//a[@title='My Account']")
+	public WebElement myAccountLinkHeader;
+	
 	}
