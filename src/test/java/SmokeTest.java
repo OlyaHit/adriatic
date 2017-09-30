@@ -11,6 +11,7 @@ import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
 import helpers.Rules;
 import ru.yandex.qatools.allure.annotations.*;
+
 import ru.yandex.qatools.allure.model.SeverityLevel;
 
 @Title("suite:Smoke Test")
@@ -48,7 +49,7 @@ public class SmokeTest {
 	public void signIn(){
 		 log.info("Running test - signIn");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "olyahit@gmail.com");
@@ -75,7 +76,7 @@ public class SmokeTest {
 	public void signOut(){
 		 log.info("Running test - signOut");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "olyahit@gmail.com");
 		 
@@ -89,7 +90,7 @@ public class SmokeTest {
 		 log.info("Click SignoutButton");
 		 clickButton(basePage.SignoutButton);
 		 
-		 boolean result = isElementDisplayed(basePage.SignInButton);
+		 boolean result = isElementDisplayed(basePage.getSignInButton());
 		 log.info("User is logout:" + result);
 		 Assert.assertTrue("User is LogIn", result); 
 	}
@@ -246,7 +247,7 @@ public class SmokeTest {
 	@Test
 	public void footerIsDisplay(){
 		log.info("Running test - footerIsDisplay");
-		boolean result = isElementDisplayed(basePage.footer);
+		boolean result = isElementDisplayed(basePage.getFooter());
 		log.info("footer Is Display:" + result);
 		Assert.assertTrue("footer Is Display: ", result);
 	}

@@ -1,30 +1,61 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.gargoylesoftware.htmlunit.ThreadedRefreshHandler;
+
+import businessFunctionsGuru.AccountFunctions;
+
 import static helpers.WebLibrary.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import pageObjectGuru.AccountPage;
 import pageObjectGuru.BasePageG;
 import pageObjectGuru.DetailOfProductsPage;
 import pageObjectGuru.MobilePage;
+import pageObjectGuru.MyWishList;
 import pageObjectGuru.ShoppingCart;
+import pageObjectGuru.TVPage;
+
+import java.io.BufferedInputStream;
+//import java.net.URL;
+//import org.apache.pdfbox.cos.COSDocument;
+//import org.apache.pdfbox.pdfparser.PDFParser;
+//import org.apache.pdfbox.pdmodel.PDDocument;
 
 public class MobileTest {
 	
 	private static final Logger log = Logger.getLogger(LiveChatOnlineTest.class);
-	public  WebDriver driver = new FirefoxDriver();
-	public BasePageG basePage = new BasePageG(driver);
-	public MobilePage mobilePage = new MobilePage(driver);
-	public DetailOfProductsPage detailPage = new DetailOfProductsPage(driver);
-	public ShoppingCart cartPage = new ShoppingCart(driver);
+	
+	public static  WebDriver driver;
+	public BasePageG basePage;
+	public MobilePage mobilePage;
+	public DetailOfProductsPage detailPage;
+	public ShoppingCart cartPage;
+	public AccountPage account;
+	public AccountFunctions accountFunctions;
 	
 	@BeforeClass
 	public static void beforeAll(){
 		log.info("Running suite: MobileTest");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\java\\resources\\chromedriver.exe");
+		driver = new ChromeDriver();
+		setUpDriver(driver,15);
 			}
 	@Before
 	public void beforeEach() {
-		setUpDriver(driver,15);
 		goToUrl(driver, "http://live.guru99.com/index.php");
+		basePage = new BasePageG(driver);
+		mobilePage = new MobilePage(driver);
+		detailPage = new DetailOfProductsPage(driver);
+		cartPage = new ShoppingCart(driver);
+		account = new AccountPage(driver);
+		accountFunctions = new AccountFunctions(driver);
 	}
 	@After
 	public void shutDown (){
@@ -34,9 +65,9 @@ public class MobileTest {
 	@Test
 	public void verifyMobileSortedByName (){
 		log.info("click link mobileMenu" );
-		clickLink(basePage.mobileMenu);
+		clickLink(basePage.getMobileMenu());
 		log.info("sortBy Name in DropDownForMobile" );
-		selectDropDownByIndex(driver, mobilePage.sortByDropDownForMobile, 1);
+		selectDropDownByIndex(driver, mobilePage.getSortByDropDownForMobile(),1);
 		
 		String expectedResult = "IPHONE";
 		String actualResult = mobilePage.mobileProductNames.get(0).getText();
@@ -49,7 +80,7 @@ public class MobileTest {
 	@Test
 	public void verifyCostOfMobileBetweenListPageAndDetailPage (){
 		log.info("click link mobileMenu" );
-		clickLink(basePage.mobileMenu);
+		clickLink(basePage.getMobileMenu());
 		String expectedCostListPageSonyXP = mobilePage.sonyXperiaPrice.getText();
 		log.info("Save cost of Sony Xperia on ListPage " + expectedCostListPageSonyXP );
 		
@@ -62,12 +93,13 @@ public class MobileTest {
 				expectedCostListPageSonyXP,actualCostDetailPageSonyXP );
 		
 	}
+	@Ignore
 	@Test 
 	public void verifyAddingProductsToCart(){
 		log.info("click link mobileMenu" );
-		clickLink(basePage.mobileMenu);
+		clickLink(basePage.getMobileMenu());
 		log.info("click addToCartOfsonyXperia" );
-		clickButton(mobilePage.addToCartOfsonyXperia);
+		mobilePage.clickButtonAddToCartOfsonyXperia();
 		String actualMessage = cartPage.messageAddedProductToCart.getText();
 		log.info("message is appread " + actualMessage );
 		String expectedPartOfMessage = "was added to your shopping cart.";
@@ -78,9 +110,9 @@ public class MobileTest {
 	@Test
 	public void verifyAddingProductsToCartMoreThenAvailable(){
 		log.info("click link mobileMenu" );
-		clickLink(basePage.mobileMenu);
+		clickLink(basePage.getMobileMenu());
 		log.info("click addToCartOfsonyXperia" );
-		clickButton(mobilePage.addToCartOfsonyXperia);
+		mobilePage.clickButtonAddToCartOfsonyXperia();
 		
 		log.info("type 501 quantity in cart" );
 		setTextIntoWebElement(cartPage.quantityTextField, "501");
@@ -99,17 +131,18 @@ public class MobileTest {
 		Assert.assertEquals("Error MessageMaxQuantity is not same", expectedMessageMaxQuantity,actualMessageMaxQuantity );
 		Assert.assertEquals("Error MessageProductNotOrrder is not same", expectedMessageProductNotOrrder,actualMessageProductNotOrrder );
 	}
+	@Ignore
 	@Test
 	public void verifyPossibilityCompareTwoMobile() throws InterruptedException{
 		log.info("click link mobileMenu" );
-		clickLink(basePage.mobileMenu);
+		clickLink(basePage.getMobileMenu());
 		log.info("click add To CompareList sonyXperia" );
-		clickLink(mobilePage.addToCompareSonyXperia);
+		mobilePage.clickLinkAddToCompareSonyXperia();
 		
 		log.info("click add To CompareList Iphone" );
-		clickButton(mobilePage.addToCompareIphone);
+		mobilePage.clickButtonAddToCompareIphone();
 		log.info("click compare Button" );
-		clickButton(mobilePage.compareButton);
+		mobilePage.clickCompareButton();
 		
 		log.info("switch to new window" );
 		waitForNewWindowAndSwitchToIt(driver);
@@ -131,9 +164,101 @@ public class MobileTest {
 		Assert.assertEquals("Wrong mobile1",expectedMobile1,actualMobile1);
 		Assert.assertEquals("Wrong mobile2",expectedMobile2,actualMobile2);
 	}
+	@Ignore
 	@Test
 	public void verifyAccountCreation(){
+		log.info("click link Myaccount" );
+		basePage.clickMyAccountLinkHeader();
+		clickButton(account.creatAccountButton);
+		accountFunctions.createAccount(account);
 		
+		String expectedMessage = "Thank you for registering with Main Website Store.";
+		String actualMessage = account.successMessageRegisteAccont.getText();
+		Assert.assertEquals("Wrong title",expectedMessage, actualMessage);
 	}
 	
-}
+	@Ignore
+	@Test
+	public void shareWishList(){
+		TVPage tvPage = new TVPage(driver);
+		MyWishList myWishListPage = new MyWishList(driver);
+		tvPage.clickAccountLink();
+		tvPage.clickMyAccountLinkHeader();
+		accountFunctions.loginAsValidUser(account);
+		
+		tvPage.clickTvMenu();
+		tvPage.clickAddToWishList("4");
+		myWishListPage.clickShareWishlistButton();
+		myWishListPage.setTextEmailToShare("gdhhhh@gmail.com, gdgfg@gmail.com");
+		myWishListPage.setTextMessageField("to share");
+		
+		myWishListPage.clickShareWishlist();
+		String expectedResult = "Your Wishlist has been shared.";
+		Assert.assertEquals(expectedResult, myWishListPage.getSharedResult());
+		
+	}
+
+	@Ignore
+	@Test
+	public void verifyEnteredTextInSearchField(){
+		basePage.setTextInSearchField("alla");
+		String actualResult = basePage.getSearchField().getAttribute("value");
+		System.out.println(actualResult);
+		Assert.assertEquals("Wrong text", "alla", actualResult);
+	}
+	
+	@Ignore
+	@Test
+	public void verifyAllOptionInDropDown(){
+		basePage.clickMobileMenu();
+		List <String> listSort = mobilePage.getOptionSortByMobile();
+		ArrayList<String> actualList = new ArrayList<String>();
+		
+		for (int i = 0; i < listSort.size(); i++) { 		      
+			actualList.add(listSort.get(i).trim());		
+	      }  
+		System.out.println("Elements are:"+actualList);
+		List <String> expectedList = new ArrayList<String>(Arrays.asList("Position", "Name", "Price"));
+		Assert.assertArrayEquals(expectedList.toArray(),actualList.toArray());
+	}
+	
+	@Ignore
+	@Test
+	public void verifyDiscountCoupon(){
+		mobilePage.clickMobileMenu();
+		clickButton(mobilePage.getAddToCart("2"));
+		mobilePage.setCouponCode();
+		mobilePage.clickApplyButton();
+		String expectedResult = "GURU50";
+		
+		Assert.assertTrue(mobilePage.getCouponResult().contains(expectedResult));
+	}
+	
+	@Test
+	public void verifyStatusOfOrder(){
+		basePage.clickAccountLink();
+		basePage.clickMyAccountLinkHeader();
+		accountFunctions.loginAsValidUser(account);
+		account.clickViewOrderLink();
+		switchBetweenWindows(driver);
+		account.clickPrintOrderLink();
+		switchBetweenWindows(driver);
+//		URL url = new URL("http://live.guru99.com/index.php/sales/order/print/order_id/5302/");
+//		
+//		BufferedInputStream file = 
+//				new BufferedInputStream(url.openStream());
+//		PDFParser parser = new PDFParser(file);
+//				
+//		convert as below
+//				File file = new File("D:/Paynetsbicardbill.pdf");
+//				PDFParser parser = new PDFParser(new FileInputStream(file));
+//				
+		String expectedResult = "100005266";
+		Assert.assertTrue(account.getOrderNumberText().contains(expectedResult));
+	}
+	
+	
+	}
+
+	
+

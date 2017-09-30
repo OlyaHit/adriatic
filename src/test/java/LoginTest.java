@@ -44,7 +44,7 @@ public class LoginTest {
 	public void loginValidUser(){
 		 log.info("Running test - LoginValidUser");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 		 
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "olyahit@gmail.com");
@@ -68,7 +68,7 @@ public class LoginTest {
 	public void loginInvalidEmail() {
 		 log.info("Running test - LoginInvalidEmail");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 		
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "tyuutf@gmail.com");
@@ -90,7 +90,7 @@ public class LoginTest {
 	public void loginInvalidPassword() {
 		 log.info("Running test - LoginInvalidPassword");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 		
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "olyahit@gmail.com");
@@ -112,7 +112,7 @@ public class LoginTest {
 	public void signOut(){
 		 log.info("Running test - signOut");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "olyahit@gmail.com");
 		 
@@ -126,7 +126,7 @@ public class LoginTest {
 		 log.info("Click SignoutButton");
 		 clickButton(basePage.SignoutButton);
 		 
-		 boolean result = isElementDisplayed(basePage.SignInButton);
+		 boolean result = isElementDisplayed(basePage.getSignInButton());
 		 log.info("User is logout:" + result);
 		 Assert.assertTrue("User is LogIn", result); 
 	}
@@ -139,7 +139,7 @@ public class LoginTest {
 	public void resetPasswordWithValidEmail(){
 		log.info("Running test - resetPasswordWithValidEmail");
 		log.info("Click SignInButton");
-		clickButton(basePage.SignInButton);
+		basePage.clickSignInButton();
 		log.info("Click ForgotYourPassword");
 		clickLink(basePage.ForgotYourPassword);
 		
@@ -160,7 +160,7 @@ public class LoginTest {
 	public void resetPasswordWithInvalidEmail(){
 		log.info("Running test - resetPasswordWithInvalidEmail");
 		log.info("Click SignInButton");
-		clickButton(basePage.SignInButton);
+		basePage.clickSignInButton();
 		log.info("Click ForgotYourPassword");
 		clickLink(basePage.ForgotYourPassword);
 		
@@ -181,7 +181,7 @@ public class LoginTest {
 	public void loginCancel(){
 		 log.info("Running test - loginCancel");
 		 log.info("Click SignInButton");
-		 clickButton(basePage.SignInButton);
+		 basePage.clickSignInButton();
 		
 		 log.info("Fill EmailTextfield");
 		 setTextIntoWebElement(basePage.EmailTextfield, "olyahit@gmail.com");
@@ -192,7 +192,7 @@ public class LoginTest {
 		 clickButton(basePage.logInButton);
 		 
 		 log.info("Move to HomeTab");
-		 moveMouse(actions, driver, basePage.HomeTab);
+		 moveMouse(driver, basePage.HomeTab);
 		 log.info("Move to CancelLoginButton and click");
 		 moveAndClickMouse (driver, basePage.CancelLoginButton);
 		 
