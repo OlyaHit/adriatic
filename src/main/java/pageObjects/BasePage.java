@@ -1,15 +1,16 @@
 package pageObjects;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
 public class BasePage {
-
+	protected WebDriver driver;
 
 	public BasePage(WebDriver driver) {
-
+		this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -26,15 +27,35 @@ public class BasePage {
 	
 	//Footer
 	@FindBy (id="serviceFooter")
-	public WebElement footer;
+	private WebElement footer;
 	
-	
-	
-    //SignIn Form
-    @FindBy(xpath = "//a[@id='signIn']/span[contains(text(),'Sign in')]")
-    public WebElement SignInButton;
+	public WebElement getFooter() {
+		return footer;
+	}
 
-    @FindBy(id = "loginPopup")
+
+	//SignIn Form
+    @FindBy(xpath = "//a[@id='signIn']/span[contains(text(),'Sign in')]")
+	protected WebElement signInButton;
+    
+    protected WebElement getFormByText (String text) {
+    	return driver.findElement(By.xpath("//a[@id='signIn']/span[contains(text(),'" + text + "')]"));
+    }
+    
+    public boolean isGetFormByTextDisplayed (String text) {
+    	return getFormByText(text).isDisplayed();
+    }
+    
+    public void clickSignInButton (){
+    	signInButton.click();
+    	getFormByText("asdfad").click();
+    }
+    
+    public WebElement getSignInButton() {
+		return signInButton;
+	}
+
+	@FindBy(id = "loginPopup")
     public WebElement LoginPopupWrapper;
 
     @FindBy(id = "signin_username")
