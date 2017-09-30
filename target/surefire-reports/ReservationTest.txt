@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: ReservationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 92.71 sec <<< FAILURE!
+calculationReservationWithExistingUser(ReservationTest)  Time elapsed: 36.71 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"R_u_0_a1"}
+Command duration or timeout: 20.54 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 38c98377-d0e5-44f5-a2bd-7eca2c5a702f
+*** Element info: {Using=id, value=R_u_0_a1}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous8000323244448477787webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous8000323244448477787webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+calculationReservationWithNewUser(ReservationTest)  Time elapsed: 36.103 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"R_u_0_a1"}
+Command duration or timeout: 20.64 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64c7f2e2-39e3-4c37-b467-90f28f1d913d
+*** Element info: {Using=id, value=R_u_0_a1}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous3884549947532457714webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous3884549947532457714webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+

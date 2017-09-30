@@ -1,0 +1,12 @@
+businessFunctions\SearchTrip.class
+pageObjects\AccomodationSearchPage.class
+helpers\WebLibrary.class
+businessFunctions\BasicSearchParams.class
+pageObjects\LiveChatPopup.class
+businessFunctions\ReservationParams.class
+helpers\Rules.class
+pageObjects\BasePage.class
+pageObjects\PrivateAccomodationPage.class
+businessFunctions\AdvancedSearchParams.class
+pageObjects\Homepage.class
+pageObjects\HotelsPage.class

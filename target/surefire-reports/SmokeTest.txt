@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: SmokeTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 479.339 sec <<< FAILURE!
+signIn(SmokeTest)  Time elapsed: 55.219 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"logInButton"}
+Command duration or timeout: 20.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c230bf88-65b2-46ba-9488-a7845fa17d5c
+*** Element info: {Using=id, value=logInButton}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous107268095791238993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous107268095791238993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+
+signOut(SmokeTest)  Time elapsed: 53.622 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"logInButton"}
+Command duration or timeout: 20.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1de7691f-e461-4f40-ab99-e6b0f881d68a
+*** Element info: {Using=id, value=logInButton}
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous292622625902259251webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous292622625902259251webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+

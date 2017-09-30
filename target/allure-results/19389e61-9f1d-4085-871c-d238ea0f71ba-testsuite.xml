@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1489339389690" stop="1489340229933" version="1.4.14" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>LookingHolidaySearchTest</name>
+    <title>suite:Looking Holiday Search</title>
+    <description type="text">Looking Holiday Search:</description>
+    <test-cases>
+        <test-case start="1489339389691" stop="1489339403286" status="broken">
+            <name>hotelAccommodationSearch</name>
+            <title>Hotel Accommodation Search</title>
+            <description type="text">Hotel Accommodation Search description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 278 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 428dd97b-9e47-4376-b8bf-280f2dae2d26</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 278 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 428dd97b-9e47-4376-b8bf-280f2dae2d26
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:254)
+	at businessFunctions.SearchTrip.hotelsOrVilligeSearch(SearchTrip.java:26)
+	at LookingHolidaySearchTest.hotelAccommodationSearch(LookingHolidaySearchTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339389693" stop="1489339389844" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (428dd97b-9e47-4376-b8bf-280f2dae2d26), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339389694" stop="1489339389807" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (428dd97b-9e47-4376-b8bf-280f2dae2d26)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339389809" stop="1489339389844" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (428dd97b-9e47-4376-b8bf-280f2dae2d26), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339389845" stop="1489339394076" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (428dd97b-9e47-4376-b8bf-280f2dae2d26), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339394078" stop="1489339395470" status="broken">
+                    <name>hotelsOrVilligeSearch[businessFunctions.BasicSearchParams@4040559d]</name>
+                    <title>Hotels Or Village Search:</title>
+                    <steps>
+                        <step start="1489339394080" stop="1489339394964" status="passed">
+                            <name>selectAccomodationInDropDown[hotels]</name>
+                            <title>Select Accomodation in dropdown "hotels"</title>
+                            <steps>
+                                <step start="1489339394351" stop="1489339394964" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (428dd97b-9e47-4376-b8bf-280f2dae2d26)] -&gt; id: accTypeSelected]]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339394969" stop="1489339395470" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339395096" stop="1489339395470" status="broken">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (428dd97b-9e47-4376-b8bf-280f2dae2d26)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="74e64f7a-4fec-41d2-b069-c3d0635582aa-attachment.png" type="image/png" size="1748865"/>
+                <attachment title="HTML Document" source="6b2354af-885e-429a-9614-e9ffdc7c5ec9-attachment.html" type="text/html" size="80752"/>
+                <attachment title="Browser Log" source="14607aae-b15c-463b-a361-ac6f29f0b2f8-attachment.html" type="text/html" size="32425"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="normal"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339417015" stop="1489339427828" status="broken">
+            <name>hotelAccommodationWithAdvandcedSearch</name>
+            <title>Hotel Accommodation Search with anvanced options</title>
+            <description type="text">Hotel Accommodation Search with anvanced options description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 133 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 95e88bd3-5bbf-4882-a902-14a8c9fcbd86</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 133 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 95e88bd3-5bbf-4882-a902-14a8c9fcbd86
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:254)
+	at businessFunctions.SearchTrip.hotelsOrVilligeSearch(SearchTrip.java:26)
+	at LookingHolidaySearchTest.hotelAccommodationWithAdvandcedSearch(LookingHolidaySearchTest.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339417018" stop="1489339417457" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (95e88bd3-5bbf-4882-a902-14a8c9fcbd86), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339417022" stop="1489339417350" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (95e88bd3-5bbf-4882-a902-14a8c9fcbd86)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339417353" stop="1489339417457" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (95e88bd3-5bbf-4882-a902-14a8c9fcbd86), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339417460" stop="1489339423850" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (95e88bd3-5bbf-4882-a902-14a8c9fcbd86), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339423853" stop="1489339424526" status="broken">
+                    <name>hotelsOrVilligeSearch[businessFunctions.BasicSearchParams@9640678]</name>
+                    <title>Hotels Or Village Search:</title>
+                    <steps>
+                        <step start="1489339423854" stop="1489339424261" status="passed">
+                            <name>selectAccomodationInDropDown[hotels]</name>
+                            <title>Select Accomodation in dropdown "hotels"</title>
+                            <steps>
+                                <step start="1489339423995" stop="1489339424261" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (95e88bd3-5bbf-4882-a902-14a8c9fcbd86)] -&gt; id: accTypeSelected]]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339424263" stop="1489339424526" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339424324" stop="1489339424525" status="broken">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (95e88bd3-5bbf-4882-a902-14a8c9fcbd86)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="b9e93941-4999-4654-92ee-658d7ed93306-attachment.png" type="image/png" size="1748865"/>
+                <attachment title="HTML Document" source="fdf69bf3-bee4-4209-a9f3-03b8f13e3d76-attachment.html" type="text/html" size="80765"/>
+                <attachment title="Browser Log" source="c119780c-6624-44ee-8c1d-96f38e7f4fb0-attachment.html" type="text/html" size="32425"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="minor"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339439643" stop="1489339514800" status="broken">
+            <name>privateAccommodationSearch</name>
+            <title>Private Accommodation Search</title>
+            <description type="text">Private Accommodation Search description</description>
+            <failure>
+                <message>NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui-datepicker-group ui-datepicker-group-last']//tr[2]/td[1]"}
+Command duration or timeout: 30.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fde5885e-7043-4b27-9de4-7424f9dcea23
+*** Element info: {Using=xpath, value=//div[@class='ui-datepicker-group ui-datepicker-group-last']//tr[2]/td[1]}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui-datepicker-group ui-datepicker-group-last']//tr[2]/td[1]"}
+Command duration or timeout: 30.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fde5885e-7043-4b27-9de4-7424f9dcea23
+*** Element info: {Using=xpath, value=//div[@class='ui-datepicker-group ui-datepicker-group-last']//tr[2]/td[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:255)
+	at businessFunctions.SearchTrip.privateSearch(SearchTrip.java:18)
+	at LookingHolidaySearchTest.privateAccommodationSearch(LookingHolidaySearchTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui-datepicker-group ui-datepicker-group-last']//tr[2]/td[1]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous8625401263508877793webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/OLGA~1.KHY/AppData/Local/Temp/anonymous8625401263508877793webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339439647" stop="1489339440261" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (fde5885e-7043-4b27-9de4-7424f9dcea23), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339439650" stop="1489339440030" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (fde5885e-7043-4b27-9de4-7424f9dcea23)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339440033" stop="1489339440261" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (fde5885e-7043-4b27-9de4-7424f9dcea23), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339440264" stop="1489339446947" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (fde5885e-7043-4b27-9de4-7424f9dcea23), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339446952" stop="1489339507659" status="broken">
+                    <name>privateSearch[businessFunctions.BasicSearchParams@13ecedf6]</name>
+                    <title>Private Search:</title>
+                    <steps>
+                        <step start="1489339446953" stop="1489339507659" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339447169" stop="1489339447466" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (fde5885e-7043-4b27-9de4-7424f9dcea23)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                                <step start="1489339477525" stop="1489339507659" status="broken">
+                                    <name>clickWebElement[Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='ui-datepicker-group ui-datepicker-grou...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="6c0600b4-96fc-4189-9bab-a9941432453c-attachment.png" type="image/png" size="1746442"/>
+                <attachment title="HTML Document" source="afcf2959-4b9f-432b-b11f-697818274f45-attachment.html" type="text/html" size="80721"/>
+                <attachment title="Browser Log" source="9536e1e9-2f61-4401-b286-7af370165b88-attachment.html" type="text/html" size="32318"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="blocker"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339528623" stop="1489339549384" status="broken">
+            <name>privateAccommodationSearchWithAdvandcedSearch</name>
+            <title>Private Accommodation Search with anvanced options</title>
+            <description type="text">Private Accommodation Search with anvanced options description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (875.5, 264). Other element would receive the click: &lt;div style="position: absolute; left: 0px; top: 0px; z-index: 3; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"&gt;&lt;/div&gt;
+Command duration or timeout: 234 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1f9e27d9-e38a-4360-b585-f70f2b0bacce</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (875.5, 264). Other element would receive the click: &lt;div style="position: absolute; left: 0px; top: 0px; z-index: 3; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"&gt;&lt;/div&gt;
+Command duration or timeout: 234 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1f9e27d9-e38a-4360-b585-f70f2b0bacce
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at helpers.WebLibrary.setCheckBoxState(WebLibrary.java:212)
+	at businessFunctions.SearchTrip.selectAccomodationType(SearchTrip.java:192)
+	at businessFunctions.SearchTrip.privateAdvancedSearch(SearchTrip.java:43)
+	at LookingHolidaySearchTest.privateAccommodationSearchWithAdvandcedSearch(LookingHolidaySearchTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339528625" stop="1489339528891" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339528626" stop="1489339528835" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339528836" stop="1489339528891" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339528893" stop="1489339533598" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339533599" stop="1489339543979" status="passed">
+                    <name>privateSearch[businessFunctions.BasicSearchParams@74cf108b]</name>
+                    <title>Private Search:</title>
+                    <steps>
+                        <step start="1489339533601" stop="1489339541324" status="passed">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339533774" stop="1489339534009" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                                <step start="1489339540603" stop="1489339541324" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //div[@class='ui-d...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339541327" stop="1489339542718" status="passed">
+                            <name>selectNumberOfPersons[2]</name>
+                            <title>Select Number Of Persons "2"</title>
+                            <steps>
+                                <step start="1489339541579" stop="1489339542718" status="passed">
+                                    <name>setTextIntoWebElement[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //input[cont...]</name>
+                                    <title>Set Text into WebElement "2"</title>
+                                    <steps>
+                                        <step start="1489339542216" stop="1489339542426" status="passed">
+                                            <name>clearTextField[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //input[contains(@i...]</name>
+                                            <title>Clear Text Field</title>
+                                        </step>
+                                        <step start="1489339542428" stop="1489339542428" status="passed">
+                                            <name>log[Sending text "2" to element...]</name>
+                                            <title>Sending text "2" to element...</title>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339542720" stop="1489339543979" status="passed">
+                            <name>selectLocation[Istria]</name>
+                            <title>Select Location "Istria"</title>
+                            <steps>
+                                <step start="1489339542812" stop="1489339543979" status="passed">
+                                    <name>setTextIntoWebElement[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; id: privateSearchFo...]</name>
+                                    <title>Set Text into WebElement "Istria"</title>
+                                    <steps>
+                                        <step start="1489339543292" stop="1489339543549" status="passed">
+                                            <name>clearTextField[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; id: privateSearchForm_loca...]</name>
+                                            <title>Clear Text Field</title>
+                                        </step>
+                                        <step start="1489339543551" stop="1489339543551" status="passed">
+                                            <name>log[Sending text "Istria" to element...]</name>
+                                            <title>Sending text "Istria" to element...</title>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339543980" stop="1489339547290" status="broken">
+                    <name>privateAdvancedSearch[businessFunctions.AdvancedSearchParams@594ea722]</name>
+                    <title>Private Advanced Search:</title>
+                    <steps>
+                        <step start="1489339543982" stop="1489339543982" status="passed">
+                            <name>log[click AdvancedSearchLink ]</name>
+                            <title>click AdvancedSearchLink </title>
+                        </step>
+                        <step start="1489339545094" stop="1489339546563" status="passed">
+                            <name>clickLink[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //div/a[@id='advancedSea...]</name>
+                            <title>Click Link</title>
+                        </step>
+                        <step start="1489339546564" stop="1489339547290" status="broken">
+                            <name>selectAccomodationType[appartment]</name>
+                            <title>Select Accomodation Type "appartment"</title>
+                            <steps>
+                                <step start="1489339546732" stop="1489339547290" status="broken">
+                                    <name>setCheckBoxState[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //label[@for='pri...]</name>
+                                    <title>Set Checkbox State "checked"</title>
+                                    <steps>
+                                        <step start="1489339546786" stop="1489339546919" status="passed">
+                                            <name>getCheckBoxState[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //label[@for='pri...]</name>
+                                            <title>Get Checkbox State</title>
+                                        </step>
+                                        <step start="1489339546983" stop="1489339547290" status="broken">
+                                            <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (1f9e27d9-e38a-4360-b585-f70f2b0bacce)] -&gt; xpath: //label[@for='priv...]</name>
+                                            <title>Click web element</title>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="01bfac7e-6337-48db-8636-0b84bf91e26c-attachment.png" type="image/png" size="1131820"/>
+                <attachment title="HTML Document" source="e72d9e49-07b2-4ccb-8003-39f3496d2f86-attachment.html" type="text/html" size="125216"/>
+                <attachment title="Browser Log" source="5f6eb20d-abc0-434e-bb67-d2dc1677937c-attachment.html" type="text/html" size="32965"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="critical"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339562634" stop="1489339579350" status="broken">
+            <name>villagesAccommodationSearch</name>
+            <title>Villages Accommodation Search</title>
+            <description type="text">Villages Accommodation Search description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 261 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6c4b6714-5e28-4bdf-abef-35d024e0d67e</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 261 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6c4b6714-5e28-4bdf-abef-35d024e0d67e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:254)
+	at businessFunctions.SearchTrip.hotelsOrVilligeSearch(SearchTrip.java:26)
+	at LookingHolidaySearchTest.villagesAccommodationSearch(LookingHolidaySearchTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339562635" stop="1489339563232" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (6c4b6714-5e28-4bdf-abef-35d024e0d67e), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339562636" stop="1489339562924" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (6c4b6714-5e28-4bdf-abef-35d024e0d67e)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339562927" stop="1489339563232" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (6c4b6714-5e28-4bdf-abef-35d024e0d67e), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339563235" stop="1489339569860" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (6c4b6714-5e28-4bdf-abef-35d024e0d67e), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339569862" stop="1489339571155" status="broken">
+                    <name>hotelsOrVilligeSearch[businessFunctions.BasicSearchParams@2295535f]</name>
+                    <title>Hotels Or Village Search:</title>
+                    <steps>
+                        <step start="1489339569863" stop="1489339570616" status="passed">
+                            <name>selectAccomodationInDropDown[village]</name>
+                            <title>Select Accomodation in dropdown "village"</title>
+                            <steps>
+                                <step start="1489339570102" stop="1489339570616" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (6c4b6714-5e28-4bdf-abef-35d024e0d67e)] -&gt; id: accTypeSelected]]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339570619" stop="1489339571155" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339570778" stop="1489339571155" status="broken">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (6c4b6714-5e28-4bdf-abef-35d024e0d67e)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="e45c9211-4057-461c-bcb8-6c8b5555627c-attachment.png" type="image/png" size="1748865"/>
+                <attachment title="HTML Document" source="eccf45c2-4038-4751-97db-e6c07e623d9e-attachment.html" type="text/html" size="80763"/>
+                <attachment title="Browser Log" source="338d0139-0dbf-4665-9133-96e30e626b9b-attachment.html" type="text/html" size="32425"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="trivial"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339593406" stop="1489339605000" status="broken">
+            <name>villagesAccommodationWithAdvandcedSearch</name>
+            <title>Villages Accommodation Search with anvanced options</title>
+            <description type="text">Villages Accommodation Search with anvanced options description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 285 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5910c332-b76d-4c74-bc12-3354fdd217fa</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 285 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5910c332-b76d-4c74-bc12-3354fdd217fa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:254)
+	at businessFunctions.SearchTrip.hotelsOrVilligeSearch(SearchTrip.java:26)
+	at LookingHolidaySearchTest.villagesAccommodationWithAdvandcedSearch(LookingHolidaySearchTest.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339593408" stop="1489339593659" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (5910c332-b76d-4c74-bc12-3354fdd217fa), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339593409" stop="1489339593601" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (5910c332-b76d-4c74-bc12-3354fdd217fa)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339593602" stop="1489339593659" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (5910c332-b76d-4c74-bc12-3354fdd217fa), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339593660" stop="1489339598291" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (5910c332-b76d-4c74-bc12-3354fdd217fa), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339598298" stop="1489339599937" status="broken">
+                    <name>hotelsOrVilligeSearch[businessFunctions.BasicSearchParams@62267a22]</name>
+                    <title>Hotels Or Village Search:</title>
+                    <steps>
+                        <step start="1489339598301" stop="1489339599468" status="passed">
+                            <name>selectAccomodationInDropDown[village]</name>
+                            <title>Select Accomodation in dropdown "village"</title>
+                            <steps>
+                                <step start="1489339598738" stop="1489339599468" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (5910c332-b76d-4c74-bc12-3354fdd217fa)] -&gt; id: accTypeSelected]]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339599470" stop="1489339599937" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339599559" stop="1489339599937" status="broken">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (5910c332-b76d-4c74-bc12-3354fdd217fa)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="96715868-f1bd-4ca3-9d76-7b778f8fc356-attachment.png" type="image/png" size="1748865"/>
+                <attachment title="HTML Document" source="c9e2a748-d483-4a2a-a58a-780e595353fa-attachment.html" type="text/html" size="80755"/>
+                <attachment title="Browser Log" source="3ee349b2-997d-43e3-a1a2-f8d30c87080f-attachment.html" type="text/html" size="32425"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="trivial"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339616029" stop="1489339631477" status="broken">
+            <name>yachtAccommodationAdvancedSearch</name>
+            <title>Yacht Accommodation Search with anvanced options</title>
+            <description type="text">Yacht Accommodation Search with anvanced options description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 265 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 802d92f1-700a-4401-ac93-a52167672d94</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 265 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 802d92f1-700a-4401-ac93-a52167672d94
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:254)
+	at businessFunctions.SearchTrip.yachtSearch(SearchTrip.java:76)
+	at LookingHolidaySearchTest.yachtAccommodationAdvancedSearch(LookingHolidaySearchTest.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339616032" stop="1489339616578" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (802d92f1-700a-4401-ac93-a52167672d94), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339616036" stop="1489339616384" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (802d92f1-700a-4401-ac93-a52167672d94)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339616388" stop="1489339616578" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (802d92f1-700a-4401-ac93-a52167672d94), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339616581" stop="1489339623323" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (802d92f1-700a-4401-ac93-a52167672d94), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339623328" stop="1489339625086" status="broken">
+                    <name>yachtSearch[businessFunctions.BasicSearchParams@6c6a7553]</name>
+                    <title>Yacht Search:</title>
+                    <steps>
+                        <step start="1489339623332" stop="1489339624458" status="passed">
+                            <name>selectAccomodationInDropDown[yacht]</name>
+                            <title>Select Accomodation in dropdown "yacht"</title>
+                            <steps>
+                                <step start="1489339623849" stop="1489339624458" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (802d92f1-700a-4401-ac93-a52167672d94)] -&gt; id: accTypeSelected]]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339624461" stop="1489339625086" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339624732" stop="1489339625086" status="broken">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (802d92f1-700a-4401-ac93-a52167672d94)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="ef7cba40-e0da-4e97-9f32-9655f1782d8a-attachment.png" type="image/png" size="1748869"/>
+                <attachment title="HTML Document" source="fa0d2df0-67ea-4de2-a972-466180e6e523-attachment.html" type="text/html" size="80763"/>
+                <attachment title="Browser Log" source="bae3e4e8-01fb-43e7-aac5-2e1448344272-attachment.html" type="text/html" size="32425"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="trivial"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1489339643870" stop="1489339657028" status="broken">
+            <name>yachtAccommodationSearch</name>
+            <title>Yacht Accommodation Search</title>
+            <description type="text">Yacht Accommodation Search description</description>
+            <failure>
+                <message>WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 389 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ce8ea1c0-2cea-4049-b625-5acfa01bed9f</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Element is not clickable at point (691.5, 301). Other element would receive the click: &lt;li class="hotel" data-value="hotel"&gt;&lt;/li&gt;
+Command duration or timeout: 389 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'OKHYTRUK-N', ip: '192.168.1.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ce8ea1c0-2cea-4049-b625-5acfa01bed9f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at helpers.WebLibrary.clickWebElement(WebLibrary.java:111)
+	at businessFunctions.SearchTrip.selectEndDate(SearchTrip.java:254)
+	at businessFunctions.SearchTrip.yachtSearch(SearchTrip.java:76)
+	at LookingHolidaySearchTest.yachtAccommodationSearch(LookingHolidaySearchTest.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1489339643872" stop="1489339644133" status="passed">
+                    <name>setUpDriver[FirefoxDriver: firefox on WINDOWS (ce8ea1c0-2cea-4049-b625-5acfa01bed9f), 30]</name>
+                    <title>Setup driver: </title>
+                    <steps>
+                        <step start="1489339643873" stop="1489339644093" status="passed">
+                            <name>maximazeWindow[FirefoxDriver: firefox on WINDOWS (ce8ea1c0-2cea-4049-b625-5acfa01bed9f)]</name>
+                            <title>Maximize window</title>
+                        </step>
+                        <step start="1489339644094" stop="1489339644133" status="passed">
+                            <name>setImplicitlyWait[FirefoxDriver: firefox on WINDOWS (ce8ea1c0-2cea-4049-b625-5acfa01bed9f), 30]</name>
+                            <title>Set implicit wait to "30" sec</title>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1489339644134" stop="1489339651839" status="passed">
+                    <name>goToUrl[FirefoxDriver: firefox on WINDOWS (ce8ea1c0-2cea-4049-b625-5acfa01bed9f), http://www.adriatic.hr/]</name>
+                    <title>Open URL "http://www.adriatic.hr/"</title>
+                </step>
+                <step start="1489339651840" stop="1489339652954" status="broken">
+                    <name>yachtSearch[businessFunctions.BasicSearchParams@519f6adb]</name>
+                    <title>Yacht Search:</title>
+                    <steps>
+                        <step start="1489339651841" stop="1489339652474" status="passed">
+                            <name>selectAccomodationInDropDown[yacht]</name>
+                            <title>Select Accomodation in dropdown "yacht"</title>
+                            <steps>
+                                <step start="1489339651991" stop="1489339652474" status="passed">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (ce8ea1c0-2cea-4049-b625-5acfa01bed9f)] -&gt; id: accTypeSelected]]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start="1489339652475" stop="1489339652954" status="broken">
+                            <name>selectEndDate</name>
+                            <title>Select End Date</title>
+                            <steps>
+                                <step start="1489339652523" stop="1489339652954" status="broken">
+                                    <name>clickWebElement[[[FirefoxDriver: firefox on WINDOWS (ce8ea1c0-2cea-4049-b625-5acfa01bed9f)] -&gt; xpath: //input[contains(@...]</name>
+                                    <title>Click web element</title>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Screenshot" source="d1a2b2e2-7ec9-43ab-a1bc-fec1eee20151-attachment.png" type="image/png" size="1748865"/>
+                <attachment title="HTML Document" source="bcc19343-f279-4fe4-ba83-59cf8f806d17-attachment.html" type="text/html" size="80752"/>
+                <attachment title="Browser Log" source="bb6cb679-22f4-4ab4-a0ec-005e652c7873-attachment.html" type="text/html" size="32425"/>
+            </attachments>
+            <labels>
+                <label name="severity" value="trivial"/>
+                <label name="host" value="OKHYTRUK-N"/>
+                <label name="thread" value="1696@OKHYTRUK-N.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Looking Holiday Search"/>
+        <label name="feature" value="Search"/>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
