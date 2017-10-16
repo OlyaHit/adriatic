@@ -1,3 +1,4 @@
+
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
@@ -192,7 +193,7 @@ public class LoginTest {
 		 clickButton(basePage.logInButton);
 		 
 		 log.info("Move to HomeTab");
-		 moveMouse(driver, basePage.HomeTab);
+		// moveMouse(driver, basePage.HomeTab);
 		 log.info("Move to CancelLoginButton and click");
 		 moveAndClickMouse (driver, basePage.CancelLoginButton);
 		 

@@ -12,7 +12,11 @@ public class AccountFunctions {
 	public AccountFunctions(WebDriver driver){
 		account=new AccountPage(driver);
 	}
-	
+
+	public void goToMyAccount(){
+		account.clickAccountLink();
+		account.clickMyAccountLinkHeader();
+	}
 	public void createAccount(AccountPage account){
 		setTextIntoWebElement(account.firstName, "Olga");
 		setTextIntoWebElement(account.lastName, "kuku");

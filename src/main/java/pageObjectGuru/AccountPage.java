@@ -3,6 +3,7 @@ package pageObjectGuru;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
+import static helpers.WebLibrary.*;
 
 public class AccountPage extends BasePageG{
 
@@ -11,7 +12,11 @@ public class AccountPage extends BasePageG{
 	}
 	
 	@FindBy(css=".button[title='Create an Account']")
-	public WebElement creatAccountButton;
+	private WebElement creatAccountButton;
+
+	public void clickCreatAccountButton() {
+		clickButton(creatAccountButton);
+	}
 	
 	//CREATE AN ACCOUNT
 	@FindBy(id="firstname")

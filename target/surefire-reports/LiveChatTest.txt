@@ -1,4 +1,53 @@
 -------------------------------------------------------------------------------
 Test set: LiveChatTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.555 sec
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 47.44 sec <<< FAILURE!
+OpenLiveChat(LiveChatTest)  Time elapsed: 0.056 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+th
+[Child 5908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1506888417336	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1506888417336	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1506888417337	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1506888417346	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous8311523767686674225webdriver-profile\extensions\fxdriver@googlecode.com
+1506888417347	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous8311523767686674225webdriver-profile\extensions\webdriver-staging
+1506888417349	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1506888417351	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1506888417351	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1506888417352	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1506888417353	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1506888417353	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1506888417354	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1506888417354	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1506888417354	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1506888417356	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1506888417356	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1506888417357	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1506888417358	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1506888417359	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1506888417360	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1506888417361	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1506888417361	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1506888417363	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1506888417366	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1506888417369	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1506888417741	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1506888418906	addons.productaddons	INFO	Completed downloading document
+1506888419354	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888419361	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+1506888421639	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888421660	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Olga', ip: '192.168.1.100', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at LiveChatTest.<init>(LiveChatTest.java:20)
+

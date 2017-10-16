@@ -81,8 +81,8 @@ public class WebLibrary {
 	
 	//-----------------actions-------------
 	@Step("Move mouse to element")
-	public static void moveMouse (Actions actions,WebDriver driver,WebElement element){
-		actions = new Actions(driver);
+	public static void moveMouse (WebDriver driver,WebElement element){
+		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();
 	}
 
@@ -373,7 +373,16 @@ public class WebLibrary {
                     "Time out - No window found");
         }
     }
-	
+	@Step("Close current window and move to parent window ")
+	public static void closeCurrentWindowAndSwitchToParent(WebDriver driver, String mainWindow){
+		for(String popUp: driver.getWindowHandles()){
+			if(!popUp.equals(mainWindow)){
+				driver.close();
+				driver.switchTo().window(mainWindow);
+			}
+		}
+	}
+
 	@Step("Switch to frame ")
 	public static void switchToFrameSmallMethod(WebDriver driver, WebElement elem){
 		driver.switchTo().frame(elem);

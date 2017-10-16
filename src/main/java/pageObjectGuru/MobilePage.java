@@ -85,6 +85,10 @@ public class MobilePage extends BasePageG {
 	public WebElement getAddToCart (String text) {
     	return driver.findElement(By.xpath("//button[contains(@class,'btn-cart') and contains(@onclick,'product/"+text+"')]"));
     }
+
+    public void clickAddToCart (String numberOfmobile){
+		getAddToCart(numberOfmobile).click();
+	}
 	
 	@FindBy(id="coupon_code")
 	private WebElement couponCodeField;

@@ -1,60 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LiveChatOnlineTest" time="30.436" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="LiveChatOnlineTest" time="0.138" tests="2" errors="2" skipped="0" failures="0">
   <properties>
+    <property name="idea.version" value="2016.3.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
-    <property name="java.vm.version" value="25.101-b13"/>
-    <property name="user.country.format" value="UA"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="user.country.format" value="US"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Olga.Khytruk\Desktop\adriatic.hr\adriatic"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Olga Kh\Desktop\IDEA"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7532"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
+    <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Olga.Khytruk\Desktop\adriatic.hr\adriatic"/>
-    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="user.dir" value="C:\Users\Olga Kh\Desktop\IDEA"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\OLGA~1.KHY\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\OLGAKH~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="D:\eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6864780330435053343.tmp"/>
+    <property name="classworlds.conf" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_101/bin/server;C:/Program Files/Java/jre1.8.0_101/bin;C:/Program Files/Java/jre1.8.0_101/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Program Files (x86)\Skype\Phone\;D:\EclipseJD\workspace\Expedia;D:\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Skype\Phone\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="6.3"/>
-    <property name="user.home" value="C:\Users\Olga.Khytruk"/>
-    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="user.home" value="C:\Users\Olga Kh"/>
+    <property name="user.timezone" value="EET"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1251"/>
-    <property name="user.name" value="Olga.Khytruk"/>
-    <property name="java.class.path" value="/D:/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="idea.launcher.bin.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.3.3\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Olga Kh"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.3.3\lib\idea_rt.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test site"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.3.3 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="user.language.format" value="uk"/>
+    <property name="user.language" value="ru"/>
+    <property name="user.language.format" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_101"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Olga.Khytruk\Desktop\adriatic.hr\adriatic\EMBEDDED"/>
+    <property name="maven.home" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.3.3\plugins\maven\lib\maven3"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -62,6 +65,252 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="sendMessageWithEmptyEmail" classname="LiveChatOnlineTest" time="17.317"/>
-  <testcase name="sendMessageWithEmptyMessageField" classname="LiveChatOnlineTest" time="13.119"/>
+  <testcase name="sendMessageWithEmptyEmail" classname="LiveChatOnlineTest" time="0.127">
+    <error message="Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: &#10;th&#10;[Child 5204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346&#10;[Child 5204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346&#10;1506888330729	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;&#10;1506888330729	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;&#10;1506888330732	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;&#10;1506888330748	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous5143778844507435555webdriver-profile\extensions\fxdriver@googlecode.com&#10;1506888330751	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous5143778844507435555webdriver-profile\extensions\webdriver-staging&#10;1506888330754	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile&#10;1506888330757	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi&#10;1506888330759	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi&#10;1506888330760	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi&#10;1506888330761	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi&#10;1506888330782	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi&#10;1506888330782	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi&#10;1506888330783	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi&#10;1506888330784	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi&#10;1506888330786	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults&#10;1506888330787	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults&#10;1506888330789	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults&#10;1506888330790	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults&#10;1506888330791	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults&#10;1506888330792	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults&#10;1506888330794	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults&#10;1506888330795	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults&#10;1506888330797	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&#10;1506888330798	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global&#10;1506888330799	addons.xpi	DEBUG	getInstallState changed: false, state: {}&#10;1506888333395	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml&#10;1506888335177	addons.productaddons	INFO	Completed downloading document&#10;1506888335648	addons.productaddons	INFO	downloadXHR File download. status=200&#10;1506888335664	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon&#10;1506888341849	addons.productaddons	INFO	downloadXHR File download. status=200&#10;1506888342695	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon&#10;&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;Olga&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: FirefoxDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+th
+[Child 5204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1506888330729	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1506888330729	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1506888330732	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1506888330748	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous5143778844507435555webdriver-profile\extensions\fxdriver@googlecode.com
+1506888330751	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous5143778844507435555webdriver-profile\extensions\webdriver-staging
+1506888330754	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1506888330757	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1506888330759	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1506888330760	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1506888330761	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1506888330782	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1506888330782	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1506888330783	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1506888330784	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1506888330786	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1506888330787	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1506888330789	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1506888330790	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1506888330791	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1506888330792	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1506888330794	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1506888330795	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1506888330797	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1506888330798	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1506888330799	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1506888333395	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1506888335177	addons.productaddons	INFO	Completed downloading document
+1506888335648	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888335664	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+1506888341849	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888342695	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Olga', ip: '192.168.1.100', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at LiveChatOnlineTest.<init>(LiveChatOnlineTest.java:22)
+]]></error>
+    <system-err><![CDATA[org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+th
+[Child 5204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1506888330729	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1506888330729	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1506888330732	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1506888330748	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous5143778844507435555webdriver-profile\extensions\fxdriver@googlecode.com
+1506888330751	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous5143778844507435555webdriver-profile\extensions\webdriver-staging
+1506888330754	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1506888330757	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1506888330759	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1506888330760	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1506888330761	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1506888330782	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1506888330782	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1506888330783	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1506888330784	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1506888330786	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1506888330787	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1506888330789	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1506888330790	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1506888330791	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1506888330792	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1506888330794	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1506888330795	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1506888330797	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1506888330798	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1506888330799	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1506888333395	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1506888335177	addons.productaddons	INFO	Completed downloading document
+1506888335648	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888335664	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+1506888341849	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888342695	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at LiveChatOnlineTest.<init>(LiveChatOnlineTest.java:22)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+]]></system-err>
+  </testcase>
+  <testcase name="sendMessageWithEmptyMessageField" classname="LiveChatOnlineTest" time="0.011">
+    <error message="Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: &#10;th&#10;[Child 3480] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346&#10;[Child 3480] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346&#10;1506888369629	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;&#10;1506888369630	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;&#10;1506888369631	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;&#10;1506888369640	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous4330939556111813631webdriver-profile\extensions\fxdriver@googlecode.com&#10;1506888369640	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous4330939556111813631webdriver-profile\extensions\webdriver-staging&#10;1506888369642	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile&#10;1506888369644	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi&#10;1506888369645	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi&#10;1506888369645	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi&#10;1506888369645	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi&#10;1506888369646	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi&#10;1506888369646	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi&#10;1506888369647	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi&#10;1506888369647	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi&#10;1506888369648	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults&#10;1506888369649	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults&#10;1506888369650	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults&#10;1506888369651	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults&#10;1506888369652	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults&#10;1506888369653	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults&#10;1506888369653	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults&#10;1506888369654	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults&#10;1506888369656	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&#10;1506888369659	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global&#10;1506888369664	addons.xpi	DEBUG	getInstallState changed: false, state: {}&#10;1506888370513	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml&#10;1506888371965	addons.productaddons	INFO	Completed downloading document&#10;1506888372396	addons.productaddons	INFO	downloadXHR File download. status=200&#10;1506888372403	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon&#10;1506888375190	addons.productaddons	INFO	downloadXHR File download. status=200&#10;1506888375202	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon&#10;&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;Olga&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: FirefoxDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+th
+[Child 3480] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3480] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1506888369629	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1506888369630	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1506888369631	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1506888369640	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous4330939556111813631webdriver-profile\extensions\fxdriver@googlecode.com
+1506888369640	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous4330939556111813631webdriver-profile\extensions\webdriver-staging
+1506888369642	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1506888369644	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1506888369645	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1506888369645	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1506888369645	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1506888369646	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1506888369646	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1506888369647	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1506888369647	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1506888369648	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1506888369649	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1506888369650	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1506888369651	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1506888369652	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1506888369653	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1506888369653	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1506888369654	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1506888369656	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1506888369659	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1506888369664	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1506888370513	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1506888371965	addons.productaddons	INFO	Completed downloading document
+1506888372396	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888372403	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+1506888375190	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888375202	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Olga', ip: '192.168.1.100', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at LiveChatOnlineTest.<init>(LiveChatOnlineTest.java:22)
+]]></error>
+    <system-err><![CDATA[org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+th
+[Child 3480] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3480] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1506888369629	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1506888369630	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1506888369631	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1506888369640	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous4330939556111813631webdriver-profile\extensions\fxdriver@googlecode.com
+1506888369640	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\OLGAKH~1\AppData\Local\Temp\anonymous4330939556111813631webdriver-profile\extensions\webdriver-staging
+1506888369642	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1506888369644	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1506888369645	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1506888369645	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1506888369645	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1506888369646	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files (x86)\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1506888369646	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1506888369647	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1506888369647	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1506888369648	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1506888369649	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1506888369650	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1506888369651	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1506888369652	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1506888369653	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1506888369653	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1506888369654	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1506888369656	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1506888369659	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1506888369664	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1506888370513	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/55.0.3/20170824053622/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%206.3.0.0%20(x64)/default/default/update.xml
+1506888371965	addons.productaddons	INFO	Completed downloading document
+1506888372396	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888372403	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+1506888375190	addons.productaddons	INFO	downloadXHR File download. status=200
+1506888375202	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\OLGAKH~1\AppData\Local\Temp\tmpaddon
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at LiveChatOnlineTest.<init>(LiveChatOnlineTest.java:22)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:217)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:266)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+]]></system-err>
+  </testcase>
 </testsuite>

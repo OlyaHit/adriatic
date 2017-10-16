@@ -2,9 +2,6 @@ import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import com.gargoylesoftware.htmlunit.ThreadedRefreshHandler;
 
 import businessFunctionsGuru.AccountFunctions;
 
@@ -21,7 +18,7 @@ import pageObjectGuru.MobilePage;
 import pageObjectGuru.MyWishList;
 import pageObjectGuru.ShoppingCart;
 import pageObjectGuru.TVPage;
-
+import pageObjectGuru.CheckoutPage;
 import java.io.BufferedInputStream;
 //import java.net.URL;
 //import org.apache.pdfbox.cos.COSDocument;
@@ -30,7 +27,7 @@ import java.io.BufferedInputStream;
 
 public class MobileTest {
 	
-	private static final Logger log = Logger.getLogger(LiveChatOnlineTest.class);
+	private static final Logger log = Logger.getLogger(MobileTest.class);
 	
 	public static  WebDriver driver;
 	public BasePageG basePage;
@@ -43,7 +40,7 @@ public class MobileTest {
 	@BeforeClass
 	public static void beforeAll(){
 		log.info("Running suite: MobileTest");
-		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\java\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olga Kh\\Desktop\\IDEA\\src\\main\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		setUpDriver(driver,15);
 			}
@@ -56,14 +53,17 @@ public class MobileTest {
 		cartPage = new ShoppingCart(driver);
 		account = new AccountPage(driver);
 		accountFunctions = new AccountFunctions(driver);
+		driver.manage().deleteAllCookies();
 	}
-	@After
-	public void shutDown (){
+	@AfterClass
+	public static void shutDown (){
 		driver.quit();
 	}
-	@Ignore
+
+//	@Ignore
 	@Test
 	public void verifyMobileSortedByName (){
+		log.info("run verifyMobileSortedByName" );
 		log.info("click link mobileMenu" );
 		clickLink(basePage.getMobileMenu());
 		log.info("sortBy Name in DropDownForMobile" );
@@ -76,9 +76,10 @@ public class MobileTest {
 		Assert.assertEquals("Wrong sorted should be IPhone",expectedResult,actualResult);
 	
 	}
-	@Ignore
+//	@Ignore
 	@Test
 	public void verifyCostOfMobileBetweenListPageAndDetailPage (){
+		log.info(" run verifyCostOfMobileBetweenListPageAndDetailPage " );
 		log.info("click link mobileMenu" );
 		clickLink(basePage.getMobileMenu());
 		String expectedCostListPageSonyXP = mobilePage.sonyXperiaPrice.getText();
@@ -93,49 +94,14 @@ public class MobileTest {
 				expectedCostListPageSonyXP,actualCostDetailPageSonyXP );
 		
 	}
-	@Ignore
-	@Test 
-	public void verifyAddingProductsToCart(){
-		log.info("click link mobileMenu" );
-		clickLink(basePage.getMobileMenu());
-		log.info("click addToCartOfsonyXperia" );
-		mobilePage.clickButtonAddToCartOfsonyXperia();
-		String actualMessage = cartPage.messageAddedProductToCart.getText();
-		log.info("message is appread " + actualMessage );
-		String expectedPartOfMessage = "was added to your shopping cart.";
-		
-		Assert.assertTrue("Wrong Message should be " + expectedPartOfMessage, actualMessage.endsWith(expectedPartOfMessage));
-	}
-	@Ignore
-	@Test
-	public void verifyAddingProductsToCartMoreThenAvailable(){
-		log.info("click link mobileMenu" );
-		clickLink(basePage.getMobileMenu());
-		log.info("click addToCartOfsonyXperia" );
-		mobilePage.clickButtonAddToCartOfsonyXperia();
-		
-		log.info("type 501 quantity in cart" );
-		setTextIntoWebElement(cartPage.quantityTextField, "501");
-		log.info("wait element to be click" );
-		waitElementToBeClickable(driver, 10, cartPage.buttonUpdate);
-		log.info("click update button" );
-		clickButton(cartPage.buttonUpdate);
-		
-		String expectedMessageMaxQuantity = "* The maximum quantity allowed for purchase is 500.";
-		String actualMessageMaxQuantity = cartPage.errorMessagesMaxQuantity.getText().trim();
-		log.info("get error message MessageMaxQuantity: " + actualMessageMaxQuantity );
-		String expectedMessageProductNotOrrder ="Some of the products cannot be ordered in requested quantity.";
-		String actualMessageProductNotOrrder = cartPage.errorMessagesProductNotOrrder.getText().trim();
-		log.info("get error message MessageProductNotOrrder: " + actualMessageProductNotOrrder );
-		
-		Assert.assertEquals("Error MessageMaxQuantity is not same", expectedMessageMaxQuantity,actualMessageMaxQuantity );
-		Assert.assertEquals("Error MessageProductNotOrrder is not same", expectedMessageProductNotOrrder,actualMessageProductNotOrrder );
-	}
-	@Ignore
+
+	//@Ignore
 	@Test
 	public void verifyPossibilityCompareTwoMobile() throws InterruptedException{
+		log.info("run verifyPossibilityCompareTwoMobile" );
 		log.info("click link mobileMenu" );
 		clickLink(basePage.getMobileMenu());
+		String mainWindow = getMainWindowHandle(driver);
 		log.info("click add To CompareList sonyXperia" );
 		mobilePage.clickLinkAddToCompareSonyXperia();
 		
@@ -143,7 +109,8 @@ public class MobileTest {
 		mobilePage.clickButtonAddToCompareIphone();
 		log.info("click compare Button" );
 		mobilePage.clickCompareButton();
-		
+
+
 		log.info("switch to new window" );
 		waitForNewWindowAndSwitchToIt(driver);
 		String expectedTitle = "COMPARE PRODUCTS";
@@ -158,8 +125,15 @@ public class MobileTest {
 		String actualMobile2 = mobilePage.IPhoneText.getText();
 		log.info("get actualMobile2" +actualMobile2 );
 		log.info("close popUp window" );
-		driver.close();
-		
+//		for(String popup : driver.getWindowHandles()) {
+//			if (!popup.equals(mainWindow)) {
+//				driver.close();
+//				driver.switchTo().window(mainWindow);
+//			}
+//		}
+
+        closeCurrentWindowAndSwitchToParent(driver,mainWindow);
+
 		Assert.assertEquals("Wrong title",expectedTitle,actualTitle);
 		Assert.assertEquals("Wrong mobile1",expectedMobile1,actualMobile1);
 		Assert.assertEquals("Wrong mobile2",expectedMobile2,actualMobile2);
@@ -167,9 +141,11 @@ public class MobileTest {
 	@Ignore
 	@Test
 	public void verifyAccountCreation(){
+		log.info("run verifyAccountCreation" );
+		basePage.clickAccountLink();
 		log.info("click link Myaccount" );
 		basePage.clickMyAccountLinkHeader();
-		clickButton(account.creatAccountButton);
+		account.clickCreatAccountButton();
 		accountFunctions.createAccount(account);
 		
 		String expectedMessage = "Thank you for registering with Main Website Store.";
@@ -177,9 +153,10 @@ public class MobileTest {
 		Assert.assertEquals("Wrong title",expectedMessage, actualMessage);
 	}
 	
-	@Ignore
+	//@Ignore
 	@Test
 	public void shareWishList(){
+		log.info("run shareWishList" );
 		TVPage tvPage = new TVPage(driver);
 		MyWishList myWishListPage = new MyWishList(driver);
 		tvPage.clickAccountLink();
@@ -198,18 +175,20 @@ public class MobileTest {
 		
 	}
 
-	@Ignore
+	//@Ignore
 	@Test
 	public void verifyEnteredTextInSearchField(){
+		log.info("run verifyEnteredTextInSearchField" );
 		basePage.setTextInSearchField("alla");
 		String actualResult = basePage.getSearchField().getAttribute("value");
 		System.out.println(actualResult);
 		Assert.assertEquals("Wrong text", "alla", actualResult);
 	}
 	
-	@Ignore
+	//@Ignore
 	@Test
 	public void verifyAllOptionInDropDown(){
+		log.info("run verifyAllOptionInDropDown" );
 		basePage.clickMobileMenu();
 		List <String> listSort = mobilePage.getOptionSortByMobile();
 		ArrayList<String> actualList = new ArrayList<String>();
@@ -221,44 +200,42 @@ public class MobileTest {
 		List <String> expectedList = new ArrayList<String>(Arrays.asList("Position", "Name", "Price"));
 		Assert.assertArrayEquals(expectedList.toArray(),actualList.toArray());
 	}
-	
-	@Ignore
-	@Test
-	public void verifyDiscountCoupon(){
-		mobilePage.clickMobileMenu();
-		clickButton(mobilePage.getAddToCart("2"));
-		mobilePage.setCouponCode();
-		mobilePage.clickApplyButton();
-		String expectedResult = "GURU50";
-		
-		Assert.assertTrue(mobilePage.getCouponResult().contains(expectedResult));
-	}
-	
-	@Test
-	public void verifyStatusOfOrder(){
-		basePage.clickAccountLink();
-		basePage.clickMyAccountLinkHeader();
-		accountFunctions.loginAsValidUser(account);
-		account.clickViewOrderLink();
-		switchBetweenWindows(driver);
-		account.clickPrintOrderLink();
-		switchBetweenWindows(driver);
-//		URL url = new URL("http://live.guru99.com/index.php/sales/order/print/order_id/5302/");
-//		
-//		BufferedInputStream file = 
-//				new BufferedInputStream(url.openStream());
-//		PDFParser parser = new PDFParser(file);
-//				
-//		convert as below
-//				File file = new File("D:/Paynetsbicardbill.pdf");
-//				PDFParser parser = new PDFParser(new FileInputStream(file));
-//				
-		String expectedResult = "100005266";
-		Assert.assertTrue(account.getOrderNumberText().contains(expectedResult));
-	}
-	
-	
-	}
 
-	
+    @Test
+    public void verifyPlaceOfOrder(){
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        log.info("run TEST verifyPlaceOfOrder" );
+        log.info("goToMyAccount" );
+        accountFunctions.goToMyAccount();
+        log.info("login as user" );
+        accountFunctions.loginAsValidUser(account);
+
+        log.info("go to mobileMenu" );
+        mobilePage.clickMobileMenu();
+        log.info("add to cart sonyXperia" );
+        mobilePage.clickButtonAddToCartOfsonyXperia();
+
+        log.info("click procced to CheckOut" );
+        cartPage.clickProccedToCheckOutButton();
+        log.info("click continue in Billing Info" );
+        checkoutPage.clickContinueButtonBillingInformation();
+
+        log.info("click continue in Shipping method" );
+        checkoutPage.clickContinueButtonShippingMethod();
+        log.info("set check Money radio button" );
+        checkoutPage.clickCheckMoneyPaymentRadioButton();
+
+        log.info("click continue Payment Info" );
+        checkoutPage.clickContinueButtonPaymentInfo();
+
+        log.info(" Procced To CheckOut Button" );
+        checkoutPage.clickProccedToCheckOutButton();
+
+        String expectedResult = "Your order";
+
+        Assert.assertTrue("Order was not reseved",
+                checkoutPage.getOrderNumberMessage().contains(expectedResult));
+    }
+
+	}
 
