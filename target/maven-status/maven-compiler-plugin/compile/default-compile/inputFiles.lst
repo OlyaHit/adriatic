@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Olga Kh\Desktop\IDEA\src\main\java\businessFunctions\BasicSearchParams.java
 C:\Users\Olga Kh\Desktop\IDEA\src\main\java\businessFunctions\SearchTrip.java
 C:\Users\Olga Kh\Desktop\IDEA\src\main\java\pageObjects\PrivateAccomodationPage.java
@@ -20,3 +21,27 @@ C:\Users\Olga Kh\Desktop\IDEA\src\main\java\pageObjectGuru\ShoppingCart.java
 C:\Users\Olga Kh\Desktop\IDEA\src\main\java\businessFunctionsGuru\AccountFunctions.java
 C:\Users\Olga Kh\Desktop\IDEA\src\main\java\pageObjects\LiveChatPopup.java
 C:\Users\Olga Kh\Desktop\IDEA\src\main\java\pageObjectGuru\BasePageG.java
+=======
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\Homepage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\HotelsPage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\helpers\Rules.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\helpers\WebLibrary.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\BasePageG.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\TVPage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\ShoppingCart.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\businessFunctions\AdvancedSearchParams.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\businessFunctions\ReservationParams.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\BasePage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\AccountPage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\businessFunctionsGuru\AccountFunctions.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\LiveChatPopup.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\businessFunctionsGuru\Table.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\PagesForProbaTest.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\businessFunctions\SearchTrip.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\AccomodationSearchPage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjects\PrivateAccomodationPage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\DetailOfProductsPage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\MobilePage.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\businessFunctions\BasicSearchParams.java
+C:\Users\Olga Kh\Desktop\adriatic\src\main\java\pageObjectGuru\MyWishList.java
+>>>>>>> 733e16532be3b375e2ec2e775f973a571ef5ff0d
