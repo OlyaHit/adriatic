@@ -207,7 +207,7 @@ public class MobileTest {
 		Assert.assertEquals("Wrong text", "alla", actualResult);
 	}
 	
-	@Ignore
+
 	@Test
 	public void verifyAllOptionInDropDown(){
 		basePage.clickMobileMenu();
@@ -222,7 +222,7 @@ public class MobileTest {
 		Assert.assertArrayEquals(expectedList.toArray(),actualList.toArray());
 	}
 	
-	@Ignore
+
 	@Test
 	public void verifyDiscountCoupon(){
 		mobilePage.clickMobileMenu();
@@ -233,31 +233,6 @@ public class MobileTest {
 		
 		Assert.assertTrue(mobilePage.getCouponResult().contains(expectedResult));
 	}
-	
-	@Test
-	public void verifyStatusOfOrder(){
-		basePage.clickAccountLink();
-		basePage.clickMyAccountLinkHeader();
-		accountFunctions.loginAsValidUser(account);
-		account.clickViewOrderLink();
-		switchBetweenWindows(driver);
-		account.clickPrintOrderLink();
-		switchBetweenWindows(driver);
-//		URL url = new URL("http://live.guru99.com/index.php/sales/order/print/order_id/5302/");
-//		
-//		BufferedInputStream file = 
-//				new BufferedInputStream(url.openStream());
-//		PDFParser parser = new PDFParser(file);
-//				
-//		convert as below
-//				File file = new File("D:/Paynetsbicardbill.pdf");
-//				PDFParser parser = new PDFParser(new FileInputStream(file));
-//				
-		String expectedResult = "100005266";
-		Assert.assertTrue(account.getOrderNumberText().contains(expectedResult));
-	}
-	
-	
 	}
 
 	

@@ -81,8 +81,8 @@ public class WebLibrary {
 	
 	//-----------------actions-------------
 	@Step("Move mouse to element")
-	public static void moveMouse (Actions actions,WebDriver driver,WebElement element){
-		actions = new Actions(driver);
+	public static void moveMouse (WebDriver driver,WebElement element){
+		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();
 	}
 
