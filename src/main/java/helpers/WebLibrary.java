@@ -5,7 +5,6 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +15,6 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -105,7 +103,7 @@ public class WebLibrary {
 	//good method
 	
 	@Step("Is Element Present \"{1}\"")
-	public static  boolean isElementPresentForList (WebDriver driver,List <WebElement> elements) throws Exception{
+	public static  boolean isElementPresentForList (List <WebElement> elements) throws Exception{
 		
 		List <WebElement> element1 = elements;
 		int numberOfElements = element1.size();
@@ -122,20 +120,24 @@ public class WebLibrary {
 	}
 	
 	@Step("Is Element Present \"{1}\"")
-	public static  boolean isElementPresentForOneElement (WebDriver driver,WebElement element) throws Exception{
+	public static  boolean isElementPresentForOneElement ( WebElement element) throws Exception{
 		
 		List <WebElement> elements = new ArrayList<WebElement>();
 		elements.add(element);
-		int numberOfElements = elements.size();
-		
-		if (numberOfElements==0){
-			return false;
-		}else if (numberOfElements==1){
-			return true;
-		}else {
-			throw new Exception("There are more than 1 elemnt with current locator on the page");
-		}
+
+		return isElementPresentForList(elements);
+
+//		int numberOfElements = elements.size();
+//
+//		if (numberOfElements==0){
+//			return false;
+//		}else if (numberOfElements==1){
+//			return true;
+//		}else {
+//			throw new Exception("There are more than 1 elemnt with current locator on the page");
+//		}
 	}
+
 	
 	@Step("Click web element")
 	public static void clickWebElement(WebElement element){
@@ -416,15 +418,6 @@ public class WebLibrary {
 			System.out.println("Unable to navigate to frame with element " + frameElement + e.getStackTrace());
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
 	
 	

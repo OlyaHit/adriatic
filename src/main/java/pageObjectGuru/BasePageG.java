@@ -68,4 +68,4 @@ public class BasePageG {
     	return driver.findElement(By.xpath("//a[@id='signIn']/span[contains(text(),'" + text + "')]"));
     }
 	
-	}
+}

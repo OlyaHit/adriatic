@@ -184,12 +184,7 @@ public class MobileTest {
 		System.out.println(actualResult);
 		Assert.assertEquals("Wrong text", "alla", actualResult);
 	}
-	
-<<<<<<< HEAD
-	//@Ignore
-=======
 
->>>>>>> 733e16532be3b375e2ec2e775f973a571ef5ff0d
 	@Test
 	public void verifyAllOptionInDropDown(){
 		log.info("run verifyAllOptionInDropDown" );
@@ -204,9 +199,6 @@ public class MobileTest {
 		List <String> expectedList = new ArrayList<String>(Arrays.asList("Position", "Name", "Price"));
 		Assert.assertArrayEquals(expectedList.toArray(),actualList.toArray());
 	}
-<<<<<<< HEAD
-=======
-	
 
 	@Test
 	public void verifyDiscountCoupon(){
@@ -218,8 +210,6 @@ public class MobileTest {
 		
 		Assert.assertTrue(mobilePage.getCouponResult().contains(expectedResult));
 	}
-	}
->>>>>>> 733e16532be3b375e2ec2e775f973a571ef5ff0d
 
     @Test
     public void verifyPlaceOfOrder(){
