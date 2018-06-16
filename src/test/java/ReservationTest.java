@@ -1,6 +1,7 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import businessFunctions.ReservationParams;
 import businessFunctions.SearchTrip;
@@ -20,7 +21,7 @@ public class ReservationTest {
 
 private static final Logger log = Logger.getLogger(LookingHolidaySearchTest.class);
 	
-	public WebDriver driver = new FirefoxDriver();
+	public WebDriver driver = new ChromeDriver();
 	public AccomodationSearchPage searchPage = new AccomodationSearchPage(driver);
 	public SearchTrip searchTrip = new SearchTrip(driver);
 

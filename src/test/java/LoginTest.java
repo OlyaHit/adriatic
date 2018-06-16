@@ -2,6 +2,7 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import ru.yandex.qatools.allure.annotations.*;
@@ -20,7 +21,7 @@ import ru.yandex.qatools.allure.model.SeverityLevel;
 public class LoginTest {
 
 	private static final Logger log = Logger.getLogger(LoginTest.class);
-	public WebDriver driver = new FirefoxDriver();
+	public WebDriver driver = new ChromeDriver();
 	public BasePage basePage = new BasePage(driver);
 	public Actions actions;
 

@@ -1,6 +1,7 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.BasePage;
 import static helpers.WebLibrary.*;
@@ -9,7 +10,7 @@ import pageObjects.PagesForProbaTest;
 
 
 public class ProbaTest {
-	public WebDriver driver = new FirefoxDriver();
+	public WebDriver driver = new ChromeDriver();
 	public BasePage basePage = new BasePage(driver);
 	public PagesForProbaTest probaPages = new PagesForProbaTest(driver);
 	public static String url = "http://www.adriatic.hr/";

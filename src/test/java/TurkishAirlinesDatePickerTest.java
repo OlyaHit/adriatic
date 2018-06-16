@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.Calendar;
 import java.util.List;
@@ -21,7 +22,7 @@ public class TurkishAirlinesDatePickerTest {
     //Setup Driver
     @BeforeClass
     public static void setupTest() {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.navigate().to("http://www.turkishairlines.com/tr-tr/");
         driver.manage().window().maximize();
     }

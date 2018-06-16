@@ -1,6 +1,7 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.BasePage;
 import pageObjects.LiveChatPopup;
@@ -16,10 +17,11 @@ import ru.yandex.qatools.allure.model.SeverityLevel;
 @Features("Live Chat")
 @Stories("Open Live Chat Online")
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@Ignore
 public class LiveChatOnlineTest {
-	
+
 	private static final Logger log = Logger.getLogger(LiveChatOnlineTest.class);
-	public WebDriver driver = new FirefoxDriver();
+	public WebDriver driver = new ChromeDriver();
 	public BasePage basePage = new BasePage(driver);
 	public LiveChatPopup liveChatPage = new LiveChatPopup(driver);
 

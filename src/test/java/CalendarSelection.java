@@ -13,6 +13,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class CalendarSelection {
@@ -22,7 +23,7 @@ public class CalendarSelection {
 
 	@Before
 	public void setUp() throws Exception {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		baseUrl = "http://www.expedia.com/";
 
 		// Maximize the browser's window

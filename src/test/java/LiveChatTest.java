@@ -1,6 +1,7 @@
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.Homepage;
 import pageObjects.LiveChatPopup;
@@ -14,10 +15,11 @@ import helpers.Rules;
 @Description("Live Chat Functionality:")
 @Features("Live Chat")
 @Stories("Open Live Chat popup")
+@Ignore
 public class LiveChatTest {
 
     private static final Logger log = Logger.getLogger(LiveChatTest.class);
-    public WebDriver driver = new FirefoxDriver();
+    public WebDriver driver = new ChromeDriver();
     public Homepage homepage = new Homepage(driver);
     public LiveChatPopup liveChat = new LiveChatPopup(driver);
 
