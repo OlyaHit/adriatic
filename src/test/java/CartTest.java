@@ -20,7 +20,7 @@ public class CartTest {
     @BeforeClass
     public static void beforeAll(){
         log.info("Running suite: CartTest");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olga Kh\\Desktop\\IDEA\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         setUpDriver(driver,15);
     }
